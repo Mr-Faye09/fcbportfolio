@@ -1,114 +1,83 @@
+<!-- !DOCTYPE html - tells or dictate the browser that the file type is html -->
 <!DOCTYPE html>
+<!-- html tag - contains all the html elements in our browser -->
 <html>
-	<!-- contains details about the HTML file which is not visible in the webpage. -->
+	<!-- head tag contains the properties or configuration of our website. Most of them are not visible to the website itself -->
 	<head>
-
+		<!-- meta tags for additional option/s to our website -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Edward | Web Developer Portfolio</title>
 
-		<!-- display of link shared in facebook. -->
-		<meta property="og:title" content="I coded a game with Zuitt!" />
-        <meta property="og:description" content="This Game Development project is powered by Zuitt Coding Bootcamp" />
-        <meta property="og:site_name" content="I coded a game with Zuitt!" />
-		<meta property="og:image" content="https://mr-faye09.github.io/js-game-dev/images/story-thumbnail-2048.jpg" />
-        <meta property="og:image:secure_url" content="https://mr-faye09.github.io/js-game-dev/" />
+		<!-- CSS File -->
+		<link rel="stylesheet" type="text/css" href="./style.css">
 
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
 
-		<title>2048</title>
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 	</head>
 
-	<!-- contains the actual content of the HTML file that are visible in the webpage. -->
+	<!-- body tag contains the element that will be shown on our page -->
 	<body>
+		<!-- div tag is used to create a wrapper or container for our layout -->
+		<!-- class is an html attribute -->
+		<div class="container-fluid">
+			<!-- section tag is just same with the div tag that creates a wrapper or container but section tag is semantic -->
+			<!-- id is an attribute to name a tag or element uniquely -->
+			<section id="landing" class = "text-center mt-5">
+				<!-- h1 headings tag - it is used to create headings or title in our page.
+				h1-h6 -->
+				<h1>Full Stack Web Developer</h1>
+				<!--<h2>Full Stack Web Developer</h2>
+				<h3>Full Stack Web Developer</h3>
+				<h4>Full Stack Web Developer</h4>
+				<h5>Full Stack Web Developer</h5>
+				<h6>Full Stack Web Developer</h6> -->
 
-		<div class="container">
+				<!-- p -tag is used to create paragraph on our page. -->
+				<p>Hi! My Name is Edward and I love building from the scratch</p>
 
-			<h1>2048</h1>
-			<h2>Created By: Edward :-) </h2>
-			<hr id="top-line">
+				<!-- img tag - it is use to add img in our page -->
+				<!-- src attribute - source, wherein it will tell us which image to use in page -->
 
-			<div class="header-container">
-				<div class="score-container">
-					<div class="score-label">
-						Score:
-					</div>
-					<div id="score">
-						0
-					</div>
-				</div>
-				<div class="share-button-container">
-					<div class="share-label">
-						Share:		
-					</div>
-				<div class="share-icon">
-					<a href="https://www.facebook.com/sharer/sharer.php?u=https://mr-faye09.github.io/js-game-dev/" target="_blank">
-						<img src="./images/share_2048-fb.svg">
-					</a>
-				</div>
-				</div>
-			</div>
-
-			<div id="board"></div>
+				<img src="./images/tech101.jpg" class = "img-fluid" id="profile">
+				<!-- a or anchor is used to add hyperlink in our page -->
+				<a href="mailto:edward022240@gmail.com" class = "btn btn-success btn-lg mt-5">Let's work together!</a>
+			</section>
 		</div>
 
 		<footer>
-			<!-- website -->
-			<a href="https://zuitt.co/?referral=2402-org-ali" target="_blank">
+			<a href="https://zuitt.co/?referral=2402-org-ali"target="blank">
 				<i class="fa-solid fa-globe"></i>
 			</a>
 
-			<!-- facebook -->
-			<a href="https://www.facebook.com/zuitttechcareer" target="_blank">
+			<a href="https://www.facebook.com/edward022240" target="blank">
 				<i class="fa-brands fa-facebook"></i>
-			</a>
 
-			<!-- x -->
-			<a href="https://x.com/zuittco" target="_blank">
-				<i class="fa-brands fa-x-twitter"></i>
-			</a>
+			<!-- twitter -->
+			<a href="https://x.com/pareno_edward" target="blank">
+				<i class="fa-brands fa-twitter"></i>	
 
-			<!-- instagram -->
-			<a href="https://www.instagram.com/zuitt_co/" target="_blank">
-				<i class="fa-brands fa-instagram"></i>
-			</a>
-
-			<!-- tiktok -->
-			<a href="https://www.tiktok.com/@zuittco" target="_blank">
-				<i class="fa-brands fa-tiktok"></i>
-			</a>
-
-			<!-- youtube -->
-			<a href="https://www.youtube.com/@ZuittCo" target="_blank">
-				<i class="fa-brands fa-youtube"></i>
-			</a>
-
+			<a href="https://www.instagram.com/parenoedward/" target="blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@edwarddelarosapar64" target="blank">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCcqwehd_qzDEYkOk8yTqoWw" target="blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>	
 		</footer>
 
-		<!-- Fontawesome Scripts -->
+		<!-- Font awesome kit -->
 		<script src="https://kit.fontawesome.com/14fdfc3113.js" crossorigin="anonymous"></script>
 
-		<script type="text/javascript" src="logic.js"></script>
-
-		<!-- <div id="board">
-			<div class="tile x2">[r0,c0]</div>
-			<div class="tile x2">[r0,c1]</div>
-			<div class="tile">[r0,c2]</div>
-			<div class="tile">[r0,c3]</div>
-
-			<div class="tile">[r1,c0]</div>
-			<div class="tile">[r1,c1]</div>
-			<div class="tile x1024">[r1,c2]</div>
-			<div class="tile">[r1,c3]</div>
-
-			<div class="tile x512">[r2,c0]</div>
-			<div class="tile">[r2,c1]</div>
-			<div class="tile">[r2,c2]</div>
-			<div class="tile">[r2,c3]</div>
-
-			<div class="tile">[r3,c0]</div>
-			<div class="tile">[r3,c1]</div>
-			<div class="tile">[r3,c2]</div>
-			<div class="tile">[r3,c3]</div>
-		</div> -->
+		<!-- Bootstrap script -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	</body>
 </html>
